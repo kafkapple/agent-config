@@ -40,7 +40,19 @@ Antigravity에 이 설정을 적용하는 두 가지 방법이 있습니다.
     ```
 
 ### Method B: Symlink (프로젝트별 적용)
-특정 프로젝트에서만 적용하거나 파일 시스템 기반으로 확실하게 참조시키려면, 프로젝트 루트에 심볼릭 링크를 생성합니다.
+**Step 1. 설정 가져오기 (최초 1회)**
+다른 컴퓨터나 새 환경에서 이 설정을 사용하려면, **폴더 이름을 `.agent`로 지정하여** Clone 합니다.
+
+```bash
+# 홈 디렉토리로 이동
+cd ~
+
+# .agent 라는 이름의 폴더로 다운로드 (중요!)
+git clone https://github.com/kafkapple/agent-config.git .agent
+```
+
+**Step 2. 프로젝트에 연결**
+작업하려는 프로젝트 루트에서 심볼릭 링크를 생성합니다.
 
 ```bash
 cd /path/to/your/project
