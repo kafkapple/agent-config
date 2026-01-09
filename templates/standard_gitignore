@@ -1,0 +1,35 @@
+# General
+.DS_Store
+*.log
+.agent/logging/daily/archived/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.conda/
+
+# Configuration & Secrets (CRITICAL)
+.env
+.env.*
+! .env.example
+*.yaml.local
+config/secrets/
+
+# Data & Models
+data/
+*.h5
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+wandb/
+outputs/
+
+# IDE
+.vscode/
+.idea/
