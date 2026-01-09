@@ -27,7 +27,10 @@ Antigravity에 이 설정을 적용하는 두 가지 방법이 있습니다.
 모든 프로젝트에서 항상 이 규칙을 적용하려면 Antigravity 설정에 등록합니다.
 
 1.  Antigravity 우측 하단 **Settings** 아이콘 클릭.
-2.  **Agent** > **Manage** > **Global Instructions** 입력란에 아래 내용 복사:
+2.  **Additional Options** > **Customizations** > **Rules** 탭 선택.
+3.  **Global** (전역) 섹션에서 **[+ New Rule]** 클릭.
+4.  Rule Name: `Global Agent Protocol`
+5.  Content 입력란에 아래 내용 복사:
     ```markdown
     # SYSTEM: Global Agent Protocol
     Load & Follow: ~/.agent/rules.md
